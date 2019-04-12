@@ -40,13 +40,13 @@ class Command(BaseCommand):
         # Use the name of the files
         file_name = kwargs['csv_file']
 
-            # Read csv file.
+        # Read csv file.
         df = pd.read_csv(f'{file_name}.csv')
 
-        # filter by data that has iata_code then replace NaN's with empty.
+        # filter by data that has iata_code then replace NaNs with empty.
         df_has_iata_code = df[df.iata_code.notnull()].fillna('')
         
-        # Add airports into a generator list, better for memory sufficiency.
+        # Make airports a list generator, better for memory sufficiency.
         airports = airports_instances_genertor(df_has_iata_code)
 
         # Used bulk_create to send a one hit to the database that will create all the instances.
