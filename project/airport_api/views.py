@@ -41,7 +41,7 @@ class IATA_search(APIView):
 class NameFilter(APIView):
     renderer_classes = (JSONRenderer,)
 
-    # Filter search by name all airports that contains name partially.
+    # Filter search by name all airports that contains name partially matching.
     def get(self, request, name=None, *args, **kwargs):
         if name:
             airports = AirportInfo.objects.filter(name__icontains=name)
