@@ -2,5 +2,4 @@
 
 ## Installation
 
-ol
-  1. test
+. Clone the repository 
