@@ -1,9 +1,9 @@
-from django.test import TestCase
+from django.test import TransactionTestCase
 from rest_framework.test import RequestsClient
 from .models import AirportInfo
 
-# Create your tests here.
-class ApiTests(TestCase):
+# Inherited TransactionTestCase because TestCase class is causing errors when when I try to test using postgres.
+class ApiTests(TransactionTestCase):
 
     def setUp(self):
         self.client = RequestsClient()
