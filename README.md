@@ -1,5 +1,8 @@
 # airport_api
 
+# Prerequists
+
+Make sure that `docker` and `docker-compose` is installed in your system.
 
 
 
