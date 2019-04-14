@@ -36,7 +36,7 @@ cd project/airport_api/management/commands
 ``` 
 and then run 
 ```shell
-bash cat add_data.py
+cat add_data.py
 ``` 
 to see the code behind how the data is added to the database.
 
