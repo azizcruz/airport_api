@@ -20,3 +20,8 @@ You can navigate using ``` cd /home/edu/Desktop/test_project/project/airport_api
 8. Run ```docker-compose up``` then open your browser and paste the following link in the search bar http://localhost:8000/api/airports/ this will return a list of 100 results of airports informations from database, which means everything is okay to start using the rest api.
 
 # Rest API usage
+
+There are currently 3 endpoints:
+* `/api/airports/` which returns a list of 100 results
+* `/api/airports/iata_code/<str:iata_code>/` which searches in the database and returns an airport that has the same searched iata_code, note that it is case insensitive, otherwise a message with no data found.
+* `/api/airports/search_name/<str:name>/` which filter results and return airports that contains the partial search_name value , note that it is case insensitive, otherwise it returns a message of data not found.
