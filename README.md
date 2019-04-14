@@ -15,7 +15,7 @@ Make sure that `docker` and `docker-compose` is installed in your system.
 ```shell
 git clone https://github.com/azizcruz/airport_api.git .
 ```
-5. Run the docker compose command like the following 
+5. Start the docker compose command
 ```shell
 docker-compose up
 ``` 
@@ -49,7 +49,7 @@ to see the code behind how the data is added to the database.
 
 
 
-8. Run the command
+8. Start the docker compose again
 ```shell
 docker-compose up
 ``` 
