@@ -9,7 +9,7 @@ import pandas as pd
 # Create your views here.
 
 class ListAirports(APIView):
-    renderer_classes = (JSONRenderer,)
+    
     def get(self, request, *args, **kwargs):
         # Fetch only the first 100 airports, due to the huge amount of data when fetching them all.
         airports = AirportInfo.objects.all()[:100]
@@ -18,7 +18,7 @@ class ListAirports(APIView):
     
 
 class IATA_search(APIView):
-    renderer_classes = (JSONRenderer,)
+    
 
     # Query airport information.
     def get_object(self, iata_code):
@@ -39,7 +39,6 @@ class IATA_search(APIView):
             return Response(serializer.data, status=status.HTTP_400_BAD_REQUEST)
 
 class NameFilter(APIView):
-    renderer_classes = (JSONRenderer,)
 
     # Filter search by name all airports that contains name partially matching.
     def get(self, request, name=None, *args, **kwargs):
