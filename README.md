@@ -33,10 +33,9 @@ $ docker-compose run web python project/manage.py add_data airports
 ```
 
 ## Hint:
-Use step 7 only once otherwise you will end up with bugs or duplicated data.
+* Use step 7 only once otherwise you will end up with bugs or duplicated data.
 
-## Hint:
-You can navigate using 
+* You can navigate using 
 ```shell 
 $ cd project/airport_api/management/commands
 ``` 
