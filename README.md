@@ -19,6 +19,7 @@ it will take some time until it finishes downloading and setting up the environm
 docker-compose run web python project/manage.py migrate
 ``` 
 this will create the needed databases.
+
 7. Add data to the database using the following command 
 ```shell
 docker-compose run web python project/manage.py add_data airports
