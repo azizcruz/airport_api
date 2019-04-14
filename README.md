@@ -14,6 +14,7 @@ git clone https://github.com/azizcruz/airport_api.git .
 docker-compose up
 ``` 
 it will take some time until it finishes downloading and setting up the environment which has python3 and postgres installed with an Ubuntu kernel.
+
 6. When everything is finished press ```CTRL+C``` or On Mac ```Command+C``` to stop the running environments, then run 
 ```shell
 docker-compose run web python project/manage.py migrate
