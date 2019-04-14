@@ -1,5 +1,8 @@
 # airport_api
 
+
+
+
 ## Installation
 
 1. Create a folder under any name you want.
@@ -40,7 +43,10 @@ cat add_data.py
 ``` 
 to see the code behind how the data is added to the database.
 
-8. Run 
+
+
+
+8. Run the command
 ```shell
 docker-compose up
 ``` 
@@ -49,13 +55,14 @@ then open your browser and paste the following link in the search bar http://loc
 # Rest API usage
 
 There are currently 3 endpoints:
-* `/api/airports/` which returns a list of 100 results
-* `/api/airports/iata_code/iata_code/` which searches in the database and returns an airport that has the same searched iata_code, note that it is case insensitive, otherwise a message with no data found.
-* `/api/airports/search_name/name/` which filter results and return airports that contains the partial search_name value , note that it is case insensitive, otherwise it returns a message of data not found.
+* `/api/airports/` returns a list of 100 results
+* `/api/airports/iata_code/iata_code/` searches in the database and returns an airport that has the same searched iata_code, note that it is case insensitive, otherwise it will return a message with no data found.
+* `/api/airports/search_name/name/` filter results and return airports that contains the partial search_name value , note that it is case insensitive, otherwise it will return a message with data not found.
 
 # Examples
 
-* `/api/airports/iata_code/ghc/` will return 
+* `/api/airports/iata_code/ghc/` will return
+
 ```json
 {
     "id": 5170,
@@ -80,6 +87,7 @@ There are currently 3 endpoints:
 ```
 
 * `/api/airports/search_name/china/` will return
+
 ```json
 [{
     "id": 1027,
