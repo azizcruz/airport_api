@@ -61,6 +61,24 @@ There are currently 3 endpoints:
 * `/api/airports/iata_code/iata_code/` searches in the database and returns an airport that has the same searched iata_code, note that it is case insensitive, otherwise it will return a message with no data found.
 * `/api/airports/search_name/name/` filter results and return airports that contains the partial search_name value , note that it is case insensitive, otherwise it will return a message with data not found.
 
+# Run tests
+
+* Make sure that the docker containers are running
+* Open a new terminal and paste the following command
+
+```shell
+docker exec -it 86b bash
+```
+
+this will open a shell from the web container.
+
+* paste the following command
+```shell
+cd project/; python manage.py test
+```
+
+this will run the test tracer that comes with django which will trace the file that is included in the airport_api which contains the tests.
+
 # Examples
 
 * `/api/airports/iata_code/ghc/` will return
