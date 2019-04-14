@@ -17,4 +17,4 @@ Use step 7 only once otherwise you will end up with bugs or duplicated data.
 You can navigate using ```cd /home/edu/Desktop/test_project/project/airport_api/management/commands
 ``` and then run ```bash cat add_data.py``` to see the code behind how the data is added to the database.
 
-8. Run ```docker-compose up``` then open your browser and paste the following link in the search bar http://localhost:8000/api/airports/ this will list 100 results of data from database, which means everything is okay to start using the rest api.
+8. Run ```docker-compose up``` then open your browser and paste the following link in the search bar http://localhost:8000/api/airports/ this will return a list of 100 results of airports informations from database, which means everything is okay to start using the rest api.
