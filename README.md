@@ -32,7 +32,7 @@ Use step 7 only once otherwise you will end up with bugs or duplicated data.
 ## Hint:
 You can navigate using 
 ```shell 
-cd /home/edu/Desktop/test_project/project/airport_api/management/commands
+cd project/airport_api/management/commands
 ``` 
 and then run 
 ```shell
