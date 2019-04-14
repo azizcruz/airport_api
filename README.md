@@ -30,7 +30,26 @@ There are currently 3 endpoints:
 
 * `/api/airports/iata_code/ghc/` will return 
 ```json
-{"id":5170,"ident":"MYBG","type":"medium_airport","name":"Great Harbour Cay Airport","latitude_deg":25.7383,"longitude_deg":-77.840103,"elevation_ft":"18.0","continent":"","iso_country":"BS","iso_region":"BS-NB","municipality":"Bullocks Harbour","scheduled_service":false,"gps_code":"MYBG","iata_code":"GHC","local_code":"","home_link":null,"wikipedia_link":"http://en.wikipedia.org/wiki/Great_Harbour_Cay_Airport","keywords":""}
+{
+    "id": 5170,
+    "ident": "MYBG",
+    "type": "medium_airport",
+    "name": "Great Harbour Cay Airport",
+    "latitude_deg": 25.7383,
+    "longitude_deg": -77.840103,
+    "elevation_ft": "18.0",
+    "continent": "",
+    "iso_country": "BS",
+    "iso_region": "BS-NB",
+    "municipality": "Bullocks Harbour",
+    "scheduled_service": false,
+    "gps_code": "MYBG",
+    "iata_code": "GHC",
+    "local_code": "",
+    "home_link": null,
+    "wikipedia_link": "http://en.wikipedia.org/wiki/Great_Harbour_Cay_Airport",
+    "keywords": ""
+}
 ```
 
 * `/api/airports/search_name/name/` will return
