@@ -52,7 +52,7 @@ There are currently 3 endpoints:
 }
 ```
 
-* `/api/airports/search_name/name/` will return
+* `/api/airports/search_name/china/` will return
 ```json
 [{
     "id": 1027,
