@@ -2,7 +2,7 @@
 
 # Prerequists
 
-Make sure that `docker` and `docker-compose` is installed in your system.
+Make sure that `docker` and `docker-compose` are installed in your system.
 
 
 
