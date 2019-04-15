@@ -67,7 +67,7 @@ There are currently 3 endpoints:
 * Open a new terminal and paste the following command
 
 ```shell
-docker exec -it 86b bash
+docker exec -it 881 bash
 ```
 
 this will open a shell from the web container.
