@@ -77,7 +77,7 @@ this will open a shell from the web container.
 cd project/; python manage.py test
 ```
 
-this will run the test tracer that comes with django which will trace the file that is included in the airport_api which contains the tests.
+this will run the test tracer that comes with django which will trace the tests.py file that is included in the airport_api which contains the tests cases.
 
 # Examples
 
