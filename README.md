@@ -1,12 +1,12 @@
 # airport_api
 
-## Prerequists
+# Prerequists
 
 Make sure that `docker` and `docker-compose` is installed in your system.
 
 
 
-## Installation
+# Installation
 
 1. Create a folder under any name you want.
 2. Navigate to the created folder.
