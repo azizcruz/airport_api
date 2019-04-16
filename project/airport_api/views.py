@@ -17,7 +17,7 @@ class ListAirports(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
     
 
-class IATASearch(APIView):
+class IATA_search(APIView):
     
 
     # Query airport information.
